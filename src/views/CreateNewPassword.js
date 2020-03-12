@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css';
-import Logo from '../components/logo'
+import Logo from '../components/Main/Logo'
 
 const CreateNewPassword = () => {
     const [data, setData] = useState('');
@@ -23,14 +23,14 @@ const CreateNewPassword = () => {
     return (
         <div className="App">
             <Logo />
-            <form>
-                <h3 htmlFor="rut">CREA TU PIN DE SEGURIDAD </h3>
+            <form className="center">
+                <h3 htmlFor="rut">Crea tu PIN de seguridad </h3>
                 <br></br>
                 <div>{data}</div>
                 <div>{btns}</div>
                 
 
-                <button><NavLink to="/5">ENVIAR</NavLink></button>
+                <button className="btnBigGreen"><NavLink to="/5" className="noDecoration">ENVIAR</NavLink></button>
             </form>
         </div>
     );

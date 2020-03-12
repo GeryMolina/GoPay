@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css'
-import Logo from '../components/logo'
+import Logo from '../components/Main/Logo'
 
 class RegistrationPassword extends Component {
     state = {}
@@ -9,15 +9,18 @@ class RegistrationPassword extends Component {
         return (
             <div className="App">
                 <Logo />
-                <form>
-                    <label for="rut">INGRESO CLAVE CAJERO </label>
+                <form className="center">
+                    <label for="rut">Ingresa clave cajero</label>
                     <br></br>
-                    <input type="number" min="0" max="9" name="key"></input>
-                    <input type="number" min="0" max="9" name="key"></input>
-                    <input type="number" min="0" max="9" name="key"></input>
-                    <input type="number" min="0" max="9" name="key"></input>
+                    <div className="containerCasilleros">
+                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
+                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
+                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
+                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
+                    </div>
                     <br></br>
-                    <button onClick=""><NavLink to="/4">ENVIAR</NavLink></button>
+                    
+                    <button onClick="" className="btnBigGreen"><NavLink to="/4" className="noDecoration">ENVIAR</NavLink></button>
                 </form>
             </div>
         );
