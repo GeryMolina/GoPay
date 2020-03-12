@@ -1,12 +1,22 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Start from './views/Start'
+import Start from './views/LoginView'
+import AccountsSelection from './views/AccountSelection';
+import RegistrationPassword from './views/RegisterPassword';
+import CreateNewPassword from './views/CreateNewPassword';
+import ConfirmationNewPassword from './views/ConfirmationNewPassword';
+
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/login" component={Start} />
+        <Route exact path="/" component={Start} />
+        <Route exact path="/2" component={AccountsSelection} />
+        <Route exact path="/3" component={RegistrationPassword} />
+        <Route exact path="/4" component={CreateNewPassword} />
+        <Route exact path="/5" component={ConfirmationNewPassword} />
+
       </Switch>
     </BrowserRouter>
   );
