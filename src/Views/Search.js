@@ -1,17 +1,17 @@
 import React from 'react';
-import Logo from '../Components/Main/Logo'
-import FilterWater from '../Components/Search/filterWater';
+import Logo from '../components/Main/Logo'
+import FilterWater from '../components/search/filterWater';
 
 
 const SearchWater = ()=>{
     return(
         <div>
             <Logo/>
-            <h4>Empresa</h4>
+            <h4 area-label='Empresa'>Empresa</h4>
             <FilterWater/>
-            <h4>Numero de Cliente</h4>
-            <input />
-            <button>Registrar</button>
+            <h4 area-label='Número de Cliente'>Numero de Cliente</h4>
+            <input area-label='Ingresa número de cliente'/>
+            <button area-label='Botón registrar'>Registrar</button>
         </div>
     )
 }

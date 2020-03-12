@@ -8,31 +8,34 @@ import TV from '../../Assets/Telecomunicaciones.png'
 
 const Cards=() =>{
   return(
-     <section>
-        <div>
-            <h4>Agua</h4>
-            <img src={Agua} alt='Agua'/>
+     <section area-label='Servicios Disponibles'>
+        <div area-label='Tarjeta agua'>
+            <h4 area-label='Agua'>Agua</h4>
+            <img src={Agua} alt='Gota de Agua'/>
+            <p area-label='Inscribir Cuenta'>Inscribe tu Cuenta</p>
+        </div>
+        <div area-label='Tarjeta Luz'>
+            <h4 area-label='Luz'>Luz</h4>
+            <img src={Luz} alt='Imagen de sol'/>
+            <p area-label='Inscribir Cuenta'>Inscribe tu Cuenta</p>
             
         </div>
-        <div>
-            <h4>Luz</h4>
-            <img src={Luz} alt='Luz'/>
-            
-        </div>
-        <div>
-            <h4>Gas</h4>
-            {/* <img src={Gas} alt='Gas'/> */}
+        <div area-label='Tarjeta Gas'>
+            <h4 area-label='Gas'>Gas</h4>
+            {/* <img src={Gas} alt='Llama de fuego'/> */}
+            <p area-label='Inscribir Cuenta'>Inscribe tu Cuenta</p>
            
         </div>
-        <div>
-            <h4>Celular</h4>
+        <div area-label='Tarjeta Celular'>
+            <h4 area-label='Celular'> Celular</h4>
             <img src={Celular} alt='Celular'/>
+            <p area-label='Inscribir Cuenta'>Inscribe tu Cuenta</p>
             
         </div>
-        <div>
-            <h4>Telecomunicaciones</h4>
-            <img src={TV} alt='Telecomunicaciones'/>
-            
+        <div area-label='Tarjeta Telecomunicaciones'>
+            <h4 area-label='Telecomunicaciones'>Telecomunicaciones</h4>
+            <img src={TV} alt='Imagen de TV'/>
+            <p area-label='Inscribir Cuenta'>Inscribe tu Cuenta</p>
         </div>
     </section>
   )

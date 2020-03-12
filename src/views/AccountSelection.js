@@ -7,7 +7,7 @@ class AccountsSelection extends Component {
     state = {}
     render() {
         return (
-            <div className="App" >
+            <div>
                 <Logo />
                 <button><NavLink to="/3">CUENTA VISTA/RUT</NavLink></button>
                 <button><NavLink to="/3">CUENTA CORRIENTE</NavLink></button>

@@ -10,8 +10,6 @@ import ConfirmationNewPassword from './views/ConfirmationNewPassword';
 
 // import logo from './logo.svg';
 import './App.css';
-import FilterWater from './Components/Search/filterWater';
-import FilterLigth from './Components/Search/filterLight';
 
 
 function App() {
@@ -29,10 +27,10 @@ function App() {
       </Switch>
     </BrowserRouter>
 
-    <div className="App">
-      <FilterWater/>
-      <FilterLigth/>
-    </div>
+    // <div className="App">
+    //   <FilterWater/>
+    //   <FilterLigth/>
+    // </div>
 
   );
 }

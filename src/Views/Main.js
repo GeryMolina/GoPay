@@ -1,13 +1,13 @@
 import React from 'react';
-import Logo from '../Components/Main/Logo'
-import Cards from '../Components/Main/Cards'
+import Logo from '../components/Main/Logo'
+import Cards from '../components/Main/Cards'
 
 const Main= ()=>{
     return(
         <div>
             <Logo/>
             <Cards/>
-            <button>Continuar</button>
+            <button area-label='boton continuar'>Continuar</button>
         </div>
     )
 }

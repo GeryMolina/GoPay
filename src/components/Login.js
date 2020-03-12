@@ -7,18 +7,14 @@ class Login extends Component {
         this.state = { value: '' };
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        
     }
 
     handleChange(event) {
         this.setState({ value: event.target.value });
     }
 
-    onSubmit = e => {
-        //evita que se recargue la pagina
-        event.preventDefault();
-
-    }
+    
 
 
     render() {

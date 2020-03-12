@@ -9,14 +9,14 @@ class ConfirmationNewPassword extends Component {
             <div className="App">
                 <Logo />
                 <form>
-                    <label for="rut">CONFIRMACIÓN PIN DE SEGURIDAD </label>
+                    <label htmlFor="rut">CONFIRMACIÓN PIN DE SEGURIDAD </label>
                     <br></br>
                     <input type="number" min="0" max="9" name="key"></input>
                     <input type="number" min="0" max="9" name="key"></input>
                     <input type="number" min="0" max="9" name="key"></input>
                     <input type="number" min="0" max="9" name="key"></input>
                     <br></br>
-                    <button onClick="">Enviar</button>
+                    <button>Enviar</button>
                 </form>
             </div>
         );
