@@ -7,22 +7,20 @@ const FilterWater = ()=>{
     const [filter, setFilter]= useState('');
     return(
         <div>
-
-
             <input placeholder='buscar...' list='water' area-label='Ingresa Empresa' value={filter} onChange={(e)=> setFilter(e.target.value)}/>
 
-        <datalist id='water'>
-            {list.map((name) =>{
-                if(filter.toLowerCase().length !== 0){
-                    if(name.toLowerCase().includes(filter)){
-                        return <option>{name}</option>;
-                    }else{
-                        return null;
+             <datalist id='water'>
+                {list.map((name) =>{
+                    if(filter.toLowerCase().length !== 0){
+                        if(name.toLowerCase().includes(filter)){
+                            return <option>{name}</option>;
+                        }else{
+                            return null;
+                        }
                     }
-                }
-                return null
-            })}
-        </datalist>
+                    return null
+                })}
+            </datalist>
         </div>
     )
 }

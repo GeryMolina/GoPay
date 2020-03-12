@@ -5,7 +5,7 @@ const Pay = ()=>{
     return(
 
 
-        <div className="containerPay>
+        <div className="containerPay">
             <h1 area-label='Pago Exitoso'>Pago Exitoso</h1>
             <img src={Check} alt='Pago Realizado'/>
             <h4 area-label='Monto Pagado'>Monto Pagado</h4>
