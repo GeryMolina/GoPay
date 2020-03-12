@@ -11,10 +11,29 @@ import ConfirmationNewPassword from './views/ConfirmationNewPassword';
 // import logo from './logo.svg';
 import './App.css';
 
+import Logo from './components/Main/Logo'
+import Main from './views/Main'
+import Search from './views/Search'
+import Select from './views/ViewSelect'
+import Detail from './views/Detail'
+import Pay from './views/Pay'
+
+
+
 
 function App() {
   
   return (
+
+    <div className="App">
+      <Logo/>
+      {/* <Main/> 
+      <Select/>
+      <Search/>
+      <Detail/> */}
+      <Pay/>
+    </div>
+
 
     <BrowserRouter>
       <Switch>
@@ -27,11 +46,7 @@ function App() {
       </Switch>
     </BrowserRouter>
 
-    // <div className="App">
-    //   <FilterWater/>
-    //   <FilterLigth/>
-    // </div>
-
+    
   );
 }
 
