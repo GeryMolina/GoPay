@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import '../../styles.css'
 
 const FilterWater = ()=>{
     
@@ -6,7 +7,7 @@ const FilterWater = ()=>{
     const [filter, setFilter]= useState('');
     return(
         <div>
-            <input placeholder='buscar...' list='water' value={filter} onChange={(e)=> setFilter(e.target.value)}/>
+            <input placeholder='Buscar...' list='water' value={filter} onChange={(e)=> setFilter(e.target.value)}/>
         <datalist id='water'>
             {list.map((name) =>{
                 if(filter.toLowerCase().length !== 0){

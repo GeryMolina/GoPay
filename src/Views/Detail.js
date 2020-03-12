@@ -1,11 +1,9 @@
 import React from 'react';
-import Logo from '../Components/Main/Logo'
 
 const Detail=()=>{
     return(
-        <div>
-            <Logo/>
-            <div>
+        <div className="containerDetail">
+            <div className="details">
                 <h4>Número de Cliente</h4>
                 <p>2209584-4</p>
                 <h4>Fecha de Vencimiento</h4>

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Select = ()=>{
     return(
-        <div>
-            <button>Numero de Cliente</button>
-            <button>Codigo QR</button>
+        <div className="containerSelect">
+            <button className="btnOptions">Numero de Cliente</button>
+            <button className="btnOptions">Codigo QR</button>
         </div>
     )
 }

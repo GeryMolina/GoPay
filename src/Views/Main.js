@@ -1,13 +1,12 @@
 import React from 'react';
-import Logo from '../Components/Main/Logo'
 import Cards from '../Components/Main/Cards'
 
 const Main= ()=>{
     return(
-        <div>
-            <Logo/>
+        <div className="containerMain">
             <Cards/>
-            <button>Continuar</button>
+            <h3>Total $ 12.980</h3>
+            <button className="btnBig">Ir al pago</button>
         </div>
     )
 }

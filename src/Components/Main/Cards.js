@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles.css';
 import Agua from '../../Assets/Agua.png';
 import Luz from '../../Assets/Luz.png';
 // import Gas from '../../Assets/Gas.png';
@@ -6,31 +7,32 @@ import Celular from '../../Assets/Celular.png';
 import TV from '../../Assets/Telecomunicaciones.png'
 
 
+
 const Cards=() =>{
   return(
-     <section>
-        <div>
+     <section className="containerCards">
+        <div className="cards">
             <h4>Agua</h4>
             <img src={Agua} alt='Agua'/>
-            
+            <p>$ 12.980</p>
         </div>
-        <div>
+        <div className="cards">
             <h4>Luz</h4>
             <img src={Luz} alt='Luz'/>
             
         </div>
-        <div>
+        <div className="cards">
             <h4>Gas</h4>
             {/* <img src={Gas} alt='Gas'/> */}
            
         </div>
-        <div>
+        <div className="cards">
             <h4>Celular</h4>
             <img src={Celular} alt='Celular'/>
             
         </div>
-        <div>
-            <h4>Telecomunicaciones</h4>
+        <div className="cards">
+            <h4>Hogar</h4>
             <img src={TV} alt='Telecomunicaciones'/>
             
         </div>
