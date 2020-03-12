@@ -36,12 +36,7 @@ const RegistrationPassword= ()=> {
                 <Logo />
                 <form className="center">
                     <label for="rut">Ingresa clave cajero</label>
-                    <br></br>
-                    <div className="containerCasilleros">
-                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
-                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
-                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
-                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
+                    <div>
                     <input defaultValue={num1}/>
                     <input defaultValue={num2} />
                     <input defaultValue={num3} />

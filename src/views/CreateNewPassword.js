@@ -36,7 +36,7 @@ const CreateNewPassword = () => {
         <div className="App">
             <Logo />
             <form className="center">
-                <h3 htmlFor="rut">Crea tu PIN de seguridad </h3>
+                <h3>Crea tu PIN de seguridad </h3>
                 <br></br>
                 <div>
                     <input defaultValue={num1}/>

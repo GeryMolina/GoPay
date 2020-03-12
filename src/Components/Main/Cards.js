@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../../styles.css';
 import Agua from '../../Assets/Agua.png';
 import Luz from '../../Assets/Luz.png';
@@ -15,7 +16,7 @@ const Cards=() =>{
      <section area-label='Servicios Disponibles' className="containerCards">
         <div area-label='Tarjeta agua' className="cards">
             <h4 area-label='Agua'>Agua</h4>
-            <img src={Agua} alt='Gota de Agua'/>
+            <NavLink to="/7"><img src={Agua} alt='Agua' /></NavLink>
             <p area-label='Inscribir Cuenta'>Inscribe tu Cuenta</p>
         </div>
         <div area-label='Tarjeta Luz' className="cards">

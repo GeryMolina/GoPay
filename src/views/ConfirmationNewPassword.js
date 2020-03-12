@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../App.css';
 import Logo from '../components/logo'
 
@@ -43,7 +44,7 @@ const ConfirmationNewPassword =()=>{
 
                     </div>
                 <div>{btns}</div>
-                
+                <button><NavLink to="/6">ENVIAR</NavLink></button>
             </div>
         );
 }

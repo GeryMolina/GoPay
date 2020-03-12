@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 const Detail = () => {
@@ -14,8 +15,8 @@ const Detail = () => {
                 </div>
             </div>
             <div area-label='Seccion Botones' className="containerBtn">
-                <button area-label='Botón Atras' className="btnBorder">Atrás</button>
-                <button area-label='Botón Pagar' className="btnSolid">Pagar</button>
+                <button area-label='Botón Atras' className="btnBorder"><NavLink to='/8'>Atrás</NavLink></button>
+                <button area-label='Botón Pagar' className="btnSolid"><NavLink to='/10'>Pagar</NavLink></button>
                 <h4 area-label='Total: 12.890 pesos'>Total: $12.890</h4>
             </div>
         </div>
