@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Start from './views/LoginView'
 import AccountsSelection from './views/AccountSelection';
@@ -7,8 +8,16 @@ import CreateNewPassword from './views/CreateNewPassword';
 import ConfirmationNewPassword from './views/ConfirmationNewPassword';
 
 
+// import logo from './logo.svg';
+import './App.css';
+import FilterWater from './Components/Search/filterWater';
+import FilterLigth from './Components/Search/filterLight';
+
+
 function App() {
+  
   return (
+
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Start} />
@@ -19,6 +28,12 @@ function App() {
 
       </Switch>
     </BrowserRouter>
+
+    <div className="App">
+      <FilterWater/>
+      <FilterLigth/>
+    </div>
+
   );
 }
 
