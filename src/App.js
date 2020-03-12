@@ -26,6 +26,13 @@ function App() {
   return (
 
     <div className="App">
+      {/* <Logo/> */}
+      {/* <Main/> 
+      <Select/>
+      <Search/>
+      <Detail/> */}
+      {/* <Pay/> */}
+   
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Start} />
@@ -36,7 +43,6 @@ function App() {
       </Switch>
     </BrowserRouter>
     </div>
-
     
   );
 }

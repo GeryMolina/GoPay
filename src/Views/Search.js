@@ -1,6 +1,6 @@
 import React from 'react';
 
-import FilterWater from '../components/Search/filterWater';
+import FilterWater from '../components/search/filterWater';
 
 
 const SearchWater = ()=>{
