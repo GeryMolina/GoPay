@@ -1,15 +1,19 @@
 import React from 'react';
-import FilterWater from '../Components/Search/filterWater';
+
+import FilterWater from '../components/Search/filterWater';
 
 
 const SearchWater = ()=>{
     return(
+
         <div className="containerSearch">
-            <h4>Empresa</h4>
+            
+            <h4 area-label='Empresa'>Empresa</h4>
             <FilterWater/>
-            <h4>Numero de Cliente</h4>
-            <input />
-            <button className="btnBig">Registrar</button>
+            <h4 area-label='Número de Cliente'>Numero de Cliente</h4>
+            <input area-label='Ingresa número de cliente'/>
+            <button area-label='Botón registrar' className="btnBig">Registrar</button>
+
         </div>
     )
 }

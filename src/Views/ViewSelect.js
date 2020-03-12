@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../Components/Main/Logo'
-import Select from '../Components/Main/Select';
+import Logo from '../components/Main/Logo'
+import Select from '../components/Main/Select';
 
 const ViewSelect=()=>{
     return(
