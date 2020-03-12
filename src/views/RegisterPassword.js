@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css'
-import Logo from '../components/logo'
+import Logo from '../components/Main/Logo'
 
 const RegistrationPassword= ()=> {
     
@@ -34,19 +34,23 @@ const RegistrationPassword= ()=> {
     return (
             <div className="App">
                 <Logo />
-                
-                    <h3>INGRESO CLAVE CAJERO </h3>
+                <form className="center">
+                    <label for="rut">Ingresa clave cajero</label>
                     <br></br>
-                <div>
+                    <div className="containerCasilleros">
+                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
+                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
+                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
+                    <input type="number" min="0" max="9" name="key" className="casilleros"></input>
                     <input defaultValue={num1}/>
                     <input defaultValue={num2} />
                     <input defaultValue={num3} />
                     <input defaultValue={num4} />
-
-                </div>
-                <div>{btns}</div>
-                    <button onClick=""><NavLink to="/4">ENVIAR</NavLink></button>
-                
+                    </div>
+                    <br></br>
+                     <div>{btns}</div>
+                    <button onClick="" className="btnBigGreen"><NavLink to="/4" className="noDecoration">ENVIAR</NavLink></button>
+                </form>
             </div>
         );
  }

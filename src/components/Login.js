@@ -7,25 +7,25 @@ class Login extends Component {
         this.state = { value: '' };
 
         this.handleChange = this.handleChange.bind(this);
-        
+
     }
 
     handleChange(event) {
         this.setState({ value: event.target.value });
     }
 
-    
+
 
 
     render() {
         return (
             <form onSubmit={this.onSubmit}>
-                <label>INGRESO RUT
+                <label>Ingresa RUT
                     <br></br>
                     <input type="text" id="rut" value={this.state.value} required onChange={this.handleChange} name="rut" />
                 </label>
                 <br></br>
-                <button type="submit" value="submit"><NavLink to="/2">ENVIAR</NavLink></button>
+                <button type="submit" value="submit" className="btnBigGreen"><NavLink to="/2" className="noDecoration">Enviar</NavLink></button>
             </form>
         );
     }

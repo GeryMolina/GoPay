@@ -32,9 +32,7 @@ function App() {
       <Search/>
       <Detail/> */}
       {/* <Pay/> */}
-    
-
-
+   
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Start} />
@@ -42,7 +40,6 @@ function App() {
         <Route exact path="/3" component={RegistrationPassword} />
         <Route exact path="/4" component={CreateNewPassword} />
         <Route exact path="/5" component={ConfirmationNewPassword} />
-
       </Switch>
     </BrowserRouter>
     </div>

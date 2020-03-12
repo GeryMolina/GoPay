@@ -17,7 +17,6 @@ const Detail = () => {
                 <button area-label='Botón Atras' className="btnBorder">Atrás</button>
                 <button area-label='Botón Pagar' className="btnSolid">Pagar</button>
                 <h4 area-label='Total: 12.890 pesos'>Total: $12.890</h4>
-
             </div>
         </div>
     )

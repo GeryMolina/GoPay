@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css';
-import Logo from '../components/logo'
+import Logo from '../components/Main/Logo'
 
 const CreateNewPassword = () => {
     
@@ -35,8 +35,8 @@ const CreateNewPassword = () => {
     return (
         <div className="App">
             <Logo />
-            
-                <h3 >CREA TU PIN DE SEGURIDAD </h3>
+            <form className="center">
+                <h3 htmlFor="rut">Crea tu PIN de seguridad </h3>
                 <br></br>
                 <div>
                     <input defaultValue={num1}/>
@@ -46,10 +46,11 @@ const CreateNewPassword = () => {
 
                 </div>
                 <div>{btns}</div>
-                
+             
+                <button className="btnBigGreen"><NavLink to="/5" className="noDecoration">ENVIAR</NavLink></button>
+            </form>
 
                 <button><NavLink to="/5">ENVIAR</NavLink></button>
-            
         </div>
     );
 
