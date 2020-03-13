@@ -7,10 +7,10 @@ class AccountsSelection extends Component {
     state = {}
     render() {
         return (
-            <div className="containerSelection">
+            <div className="containerSelect">
                 <Logo />
-                <NavLink to="/3" className="noDecoration"> <button area-label='Botón cuenta vista' className="btnOptions">Cuenta Vista</button></NavLink>
-                <NavLink to="/3" className="noDecoration"> <button area-label='Botón Cuenta Corriente' className="btnOptions">Cuenta Corriente</button></NavLink>
+                <NavLink to="/3" className="btnOptions"> <button area-label='Botón cuenta vista' className="texto" >Cuenta Vista</button></NavLink>
+                <NavLink to="/3" className="btnOptions"> <button area-label='Botón Cuenta Corriente' className="texto">Cuenta Corriente</button></NavLink>
             </div >
         );
     }
