@@ -16,7 +16,7 @@ import Pay from './views/Pay'
 // import logo from './logo.svg';
 import './App.css';
 
-// import Logo from './components/Main/Logo'
+import Logo from './components/Main/Logo'
 // import Main from './views/Main'
 // import Search from './views/Search'
 // import Select from './views/ViewSelect'
@@ -31,7 +31,7 @@ function App() {
   return (
 
     <div className="App">
-      {/* <Logo/> */}
+      <Logo/>
       {/* <Main/> 
       <Select/>
       <Search/>
