@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
+import Logo from '../components/Main/Logo'
 
 class Login extends Component {
     constructor(props) {
@@ -19,6 +20,8 @@ class Login extends Component {
 
     render() {
         return (
+            <div className="App">
+                <Logo/>
             <form onSubmit={this.onSubmit}>
                 <label area-label='Ingresa tu Rut'>Ingresa RUT
                     <br></br>
@@ -27,6 +30,7 @@ class Login extends Component {
                 <br></br>
                 <button area-label='Boton enviar' type="submit" value="submit" className="btnBigGreen"><NavLink to="/2" className="noDecoration">Enviar</NavLink></button>
             </form>
+            </div>
         );
     }
 
