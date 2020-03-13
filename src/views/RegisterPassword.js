@@ -37,11 +37,11 @@ const RegistrationPassword= ()=> {
                 <Logo />
                 <form className="center">
                     <label area-label='Ingresa tu clave de Cajero'>Ingresa clave cajero</label>
-                    <div>
-                        <input area-label='Campo para digitar primer numero' defaultValue={num1}/>
-                        <input area-label='Campo para digitar segundo numero' defaultValue={num2} />
-                        <input area-label='Campo para digitar tercer numero' defaultValue={num3} />
-                        <input area-label='Campo para digitar cuarto numero' defaultValue={num4} />
+                    <div className="containerCasilleros">
+                        <input area-label='Campo para digitar primer numero' defaultValue={num1} className="casilleros"/>
+                        <input area-label='Campo para digitar segundo numero' defaultValue={num2} className="casilleros"/>
+                        <input area-label='Campo para digitar tercer numero' defaultValue={num3} className="casilleros"/>
+                        <input area-label='Campo para digitar cuarto numero' defaultValue={num4} className="casilleros"/>
                     </div>
                     <br></br>
                      <div>{btns}</div>

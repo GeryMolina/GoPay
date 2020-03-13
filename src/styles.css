@@ -36,6 +36,7 @@ label {
     font-weight: normal;
     font-size: 22px;
     color: #006060;
+    text-align: center;
 }
 
 .noDecoration {
@@ -321,6 +322,7 @@ input {
 }
 
 .center{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
