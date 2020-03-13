@@ -12,7 +12,7 @@ const RegistrationPassword= ()=> {
     const btns=[];
     [1,2,3,4,5,6,7,8,9,0].forEach(item =>{
         btns.push(
-            <button onClick = {e => {
+            <button className="numbers" onClick = {e => {
                 e.preventDefault();
                 if(num1 == null){
                     setNum1(e.target.value)
@@ -33,19 +33,19 @@ const RegistrationPassword= ()=> {
     })
 
     return (
-            <div className="App">
+            <div className="App3">
                 <Logo />
                 <form className="center">
                     <label area-label='Ingresa tu clave de Cajero'>Ingresa clave cajero</label>
-                    <div>
-                        <input area-label='Campo para digitar primer numero' defaultValue={num1}/>
-                        <input area-label='Campo para digitar segundo numero' defaultValue={num2} />
-                        <input area-label='Campo para digitar tercer numero' defaultValue={num3} />
-                        <input area-label='Campo para digitar cuarto numero' defaultValue={num4} />
+                    <div className="containerCasilleros">
+                        <input area-label='Campo para digitar primer numero' defaultValue={num1} className="casilleros"/>
+                        <input area-label='Campo para digitar segundo numero' defaultValue={num2} className="casilleros"/>
+                        <input area-label='Campo para digitar tercer numero' defaultValue={num3} className="casilleros"/>
+                        <input area-label='Campo para digitar cuarto numero' defaultValue={num4} className="casilleros"/>
                     </div>
                     <br></br>
-                     <div>{btns}</div>
-                     <NavLink to="/4" className="noDecoration"><button onClick="" className="btnBigGreen">ENVIAR</button></NavLink>
+                     <div className="containerNumbers">{btns}</div>
+                     <NavLink to="/4" className="noDecoration"><button onClick="" className="transparent"></button></NavLink>
                 </form>
             </div>
         );

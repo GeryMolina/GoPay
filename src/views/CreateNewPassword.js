@@ -12,7 +12,7 @@ const CreateNewPassword = () => {
     const btns=[];
     [1,2,3,4,5,6,7,8,9,0].forEach(item =>{
         btns.push(
-            <button onClick = {e => {
+            <button className="numbers" onClick = {e => {
                 e.preventDefault();
                 if(num1 == null){
                     setNum1(e.target.value)
@@ -34,21 +34,21 @@ const CreateNewPassword = () => {
 
 
     return (
-        <div className="App">
+        <div className="App3">
             <Logo />
             <form className="center">
-                <h3 area-label='Crea tu Codigo de Seguridad'>Crea tu PIN de seguridad </h3>
+                <label area-label='Crea tu Codigo de Seguridad'>Crea tu PIN de seguridad </label>
                 <br></br>
-                <div>
-                    <input area-label='Campo para digitar primer numero' defaultValue={num1}/>
-                    <input area-label='Campo para digitar segundo numero' defaultValue={num2} />
-                    <input area-label='Campo para digitar tercer numero' defaultValue={num3} />
-                    <input area-label='Campo para digitar cuarto numero' defaultValue={num4} />
+                <div className="containerCasilleros">
+                    <input area-label='Campo para digitar primer numero' defaultValue={num1} className="casilleros"/>
+                    <input area-label='Campo para digitar segundo numero' defaultValue={num2} className="casilleros" />
+                    <input area-label='Campo para digitar tercer numero' defaultValue={num3} className="casilleros" />
+                    <input area-label='Campo para digitar cuarto numero' defaultValue={num4} className="casilleros" />
 
                 </div>
-                <div>{btns}</div>
+                <div className="containerNumbers">{btns}</div>
              
-                <NavLink to="/5" className="noDecoration"><button className="btnBigGreen"></button></NavLink>
+                <NavLink to="/5" className="noDecoration"><button className="transparent"></button></NavLink>
             </form>
 
             
