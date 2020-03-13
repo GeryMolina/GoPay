@@ -11,7 +11,7 @@ const ConfirmationNewPassword = () => {
     const btns = [];
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 0].forEach(item => {
         btns.push(
-            <button onClick={e => {
+            <button className="numbers" onClick={e => {
                 e.preventDefault();
                 if (num1 == null) {
                     setNum1(e.target.value)
@@ -32,20 +32,21 @@ const ConfirmationNewPassword = () => {
     })
 
     return (
-        <div className="App">
+        <div className="App3">
             <Logo />
+            <form className="center">
+                <label area-label='Confirmación de codigo de seguridad'>Confirmación PIN de seguridad</label>
+                <br></br>
+                <div className="containerCasilleros">
+                    <input area-label='Campo para digitar primer numero' defaultValue={num1} className="casilleros" />
+                    <input area-label='Campo para digitar segundo numero' defaultValue={num2} className="casilleros" />
+                    <input area-label='Campo para digitar tercer numero' defaultValue={num3} className="casilleros" />
+                    <input area-label='Campo para digitar cuarto numero' defaultValue={num4} className="casilleros" />
 
-            <h3 area-label='Confirmación de codigo de seguridad'>CONFIRMACIÓN PIN DE SEGURIDAD </h3>
-            <br></br>
-            <div className="containerCasilleros">
-                <input area-label='Campo para digitar primer numero' defaultValue={num1} className="casilleros" />
-                <input area-label='Campo para digitar segundo numero' defaultValue={num2} className="casilleros" />
-                <input area-label='Campo para digitar tercer numero' defaultValue={num3} className="casilleros" />
-                <input area-label='Campo para digitar cuarto numero' defaultValue={num4} className="casilleros" />
-
-            </div>
-            <div>{btns}</div>
-            <NavLink to="/6"><button></button></NavLink>
+                </div>
+                <div className="containerNumbers">{btns}</div>
+                <NavLink to="/6"><button className="transparent"></button></NavLink>
+            </form>
         </div>
     );
 }
