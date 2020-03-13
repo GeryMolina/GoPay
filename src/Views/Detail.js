@@ -15,8 +15,8 @@ const Detail = () => {
                 </div>
             </div>
             <div area-label='Seccion Botones' className="containerBtn">
-                <button area-label='Botón Atras' className="btnBorder"><NavLink to='/8'>Atrás</NavLink></button>
-                <button area-label='Botón Pagar' className="btnSolid"><NavLink to='/10'>Pagar</NavLink></button>
+                <NavLink to='/8'><button area-label='Botón Atras' className="btnBorder">Atrás</button></NavLink>
+                <NavLink to='/10'><button area-label='Botón Pagar' className="btnSolid">Pagar</button></NavLink>
                 <h4 area-label='Total: 12.890 pesos'>Total: $12.890</h4>
             </div>
         </div>

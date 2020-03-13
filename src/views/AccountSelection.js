@@ -9,8 +9,8 @@ class AccountsSelection extends Component {
         return (
             <div className="containerSelection">
                 <Logo />
-                <button className="btnOptions"><NavLink to="/3" className="noDecoration">Cuenta Vista</NavLink></button>
-                <button className="btnOptions"><NavLink to="/3" className="noDecoration">Cuenta Corriente</NavLink></button>
+                <NavLink to="/3" className="noDecoration"> <button area-label='Botón cuenta vista' className="btnOptions">Cuenta Vista</button></NavLink>
+                <NavLink to="/3" className="noDecoration"> <button area-label='Botón Cuenta Corriente' className="btnOptions">Cuenta Corriente</button></NavLink>
             </div >
         );
     }

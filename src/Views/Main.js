@@ -10,7 +10,7 @@ const Main= ()=>{
             <Cards/>
 
             <h3>Total $ 12.980</h3>
-            <button area-label='Ir a pago' className="btnBig"><NavLink to="/7">Ir al pago</NavLink></button>
+            <NavLink to="/7"><button area-label='Ir a pago' className="btnBig">Ir al pago</button></NavLink>
 
         </div>
     )

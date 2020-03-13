@@ -26,6 +26,7 @@ const CreateNewPassword = () => {
             
             }}
             value= {item}
+            area-label={item}
             key={item}>
                 {item}
         </button>)
@@ -36,21 +37,21 @@ const CreateNewPassword = () => {
         <div className="App">
             <Logo />
             <form className="center">
-                <h3>Crea tu PIN de seguridad </h3>
+                <h3 area-label='Crea tu Codigo de Seguridad'>Crea tu PIN de seguridad </h3>
                 <br></br>
                 <div>
-                    <input defaultValue={num1}/>
-                    <input defaultValue={num2} />
-                    <input defaultValue={num3} />
-                    <input defaultValue={num4} />
+                    <input area-label='Campo para digitar primer numero' defaultValue={num1}/>
+                    <input area-label='Campo para digitar segundo numero' defaultValue={num2} />
+                    <input area-label='Campo para digitar tercer numero' defaultValue={num3} />
+                    <input area-label='Campo para digitar cuarto numero' defaultValue={num4} />
 
                 </div>
                 <div>{btns}</div>
              
-                <button className="btnBigGreen"><NavLink to="/5" className="noDecoration">ENVIAR</NavLink></button>
+                <NavLink to="/5" className="noDecoration"><button className="btnBigGreen"></button></NavLink>
             </form>
 
-                <button><NavLink to="/5">ENVIAR</NavLink></button>
+            
         </div>
     );
 

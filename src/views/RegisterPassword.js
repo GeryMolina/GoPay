@@ -26,6 +26,7 @@ const RegistrationPassword= ()=> {
             
             }}
             value= {item}
+            area-label={item}
             key={item}>
                 {item}
         </button>)
@@ -35,16 +36,16 @@ const RegistrationPassword= ()=> {
             <div className="App">
                 <Logo />
                 <form className="center">
-                    <label for="rut">Ingresa clave cajero</label>
+                    <label area-label='Ingresa tu clave de Cajero'>Ingresa clave cajero</label>
                     <div>
-                    <input defaultValue={num1}/>
-                    <input defaultValue={num2} />
-                    <input defaultValue={num3} />
-                    <input defaultValue={num4} />
+                        <input area-label='Campo para digitar primer numero' defaultValue={num1}/>
+                        <input area-label='Campo para digitar segundo numero' defaultValue={num2} />
+                        <input area-label='Campo para digitar tercer numero' defaultValue={num3} />
+                        <input area-label='Campo para digitar cuarto numero' defaultValue={num4} />
                     </div>
                     <br></br>
                      <div>{btns}</div>
-                    <button onClick="" className="btnBigGreen"><NavLink to="/4" className="noDecoration">ENVIAR</NavLink></button>
+                     <NavLink to="/4" className="noDecoration"><button onClick="" className="btnBigGreen">ENVIAR</button></NavLink>
                 </form>
             </div>
         );

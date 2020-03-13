@@ -25,6 +25,7 @@ const ConfirmationNewPassword =()=>{
             
             }}
             value= {item}
+            area-label={item}
             key={item}>
                 {item}
         </button>)
@@ -34,17 +35,17 @@ const ConfirmationNewPassword =()=>{
             <div className="App">
                 <Logo />
                 
-                    <h3>CONFIRMACIÓN PIN DE SEGURIDAD </h3>
+                    <h3 area-label='Confirmación de codigo de seguridad'>CONFIRMACIÓN PIN DE SEGURIDAD </h3>
                     <br></br>
                     <div>
-                    <input defaultValue={num1}/>
-                    <input defaultValue={num2} />
-                    <input defaultValue={num3} />
-                    <input defaultValue={num4} />
+                    <input area-label='Campo para digitar primer numero' defaultValue={num1}/>
+                    <input area-label='Campo para digitar segundo numero' defaultValue={num2} />
+                    <input area-label='Campo para digitar tercer numero' defaultValue={num3} />
+                    <input area-label='Campo para digitar cuarto numero' defaultValue={num4} />
 
                     </div>
                 <div>{btns}</div>
-                <button><NavLink to="/6">ENVIAR</NavLink></button>
+                <NavLink to="/6"><button></button></NavLink>
             </div>
         );
 }

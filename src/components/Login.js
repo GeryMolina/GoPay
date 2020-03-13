@@ -20,12 +20,12 @@ class Login extends Component {
     render() {
         return (
             <form onSubmit={this.onSubmit}>
-                <label>Ingresa RUT
+                <label area-label='Ingresa tu Rut'>Ingresa RUT
                     <br></br>
-                    <input type="text" id="rut" value={this.state.value} required onChange={this.handleChange} name="rut" />
+                    <input area-label='Campo para ingresar rut' type="text" id="rut" value={this.state.value} required onChange={this.handleChange} name="rut" />
                 </label>
                 <br></br>
-                <button type="submit" value="submit" className="btnBigGreen"><NavLink to="/2" className="noDecoration">Enviar</NavLink></button>
+                <button area-label='Boton enviar' type="submit" value="submit" className="btnBigGreen"><NavLink to="/2" className="noDecoration">Enviar</NavLink></button>
             </form>
         );
     }

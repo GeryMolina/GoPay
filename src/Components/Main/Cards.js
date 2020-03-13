@@ -15,7 +15,7 @@ const Cards=() =>{
 
      <section area-label='Servicios Disponibles' className="containerCards">
         <div area-label='Tarjeta agua' className="cards">
-            <h4 area-label='Agua'>Agua</h4>
+            <h4 area-label='Gota de Agua'>Agua</h4>
             <NavLink to="/7"><img src={Agua} alt='Agua' /></NavLink>
             <p area-label='Inscribir Cuenta'>Inscribe tu Cuenta</p>
         </div>
